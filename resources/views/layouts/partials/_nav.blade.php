@@ -7,7 +7,7 @@
             <li><a href="{{ route('about_path') }}">About</a></li>
             <li><a href="#">Artisans</a></li>
 
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{ route('contact_path') }}">Contact</a></li>
             <li><a href="#" class="btn grey">Login </a></li>
             <li><a href="#" class="btn grey">Register</a></li>
         </ul>
