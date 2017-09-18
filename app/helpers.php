@@ -2,15 +2,29 @@
 
 	if(!function_exists('page_title'))
 	{
-		function($title)
+		function page_title($title)
 		{
+			$base_title = config('app.name') ." - List of all artisans";
+
 			if($title == "")
 			{
-				return "Laracarte - List of all artisans";
+				return $base_title;
 			}
 			else
 			{
-				return $title ." | "."Laracarte - List of all artisans";
+				return $title ." | ".$base_title;
 			}
 		}	
 	}
+
+
+	if(!function_exists('set_active_route'))
+	{
+		function set_active_route($route)
+		{
+			return Route::is($route) ? 'active' : '';
+		}	
+	}
+
+
+	
