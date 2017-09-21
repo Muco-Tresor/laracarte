@@ -3,11 +3,11 @@
         <a href="{{ route('home_path') }}" class="brand-logo">{{ config('app.name') }}</a>
         
         <ul class="right hide-on-med-and-down">
-            <li class="{{ Route::is(route('home_path')) ? 'active' : '' }}"><a href="{{ route('home_path') }}">Home</a></li>
+            <li class="{{ Request::is('/') ? 'active': '' }}"><a href="{{ route('home_path') }}">Home</a></li>
             <li><a href="{{ route('about_path') }}">About</a></li>
             <li><a href="#">Artisans</a></li>
 
-            <li><a href="{{ route('contact_path') }}">Contact</a></li>
+            <li class="{{ Request::is('/contact') ? 'active': '' }}"><a href="{{ route('contact_path') }}">Contact</a></li>
             <li><a href="#" class="btn grey">Login </a></li>
             <li><a href="#" class="btn grey">Register</a></li>
         </ul>

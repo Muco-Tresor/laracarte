@@ -27,6 +27,7 @@
 
   <script src="{{ asset('libs/jQuery/jquery-3.2.1.js') }}"></script>
   <script src="{{ asset('libs/bootstrap/js/bootstrap.min.js') }}"></script>
-
+  
+  @include('flashy::message')
 </body>
 </html>

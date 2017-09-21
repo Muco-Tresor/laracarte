@@ -27,6 +27,12 @@ body
 	border-radius: 5px;
 }
 
+.help-block
+{
+    display: inline-block;
+    color: #F16464;
+}
+
 footer
 {
 	margin: 4em 0;
